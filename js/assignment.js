@@ -9,7 +9,8 @@ const todos = [
 ];
 
 // Declare your two immutable variables
-
+let shiftValue;
+let popValue;
 
 // Declaring constant variables to store references to the elements
 // that will be updated by your code.
@@ -22,23 +23,24 @@ const answerSixEl = document.getElementById("answer-six");
 const submissionBtn = document.getElementById("submission-btn");
 
 function updateAnswerOne() {
-    
+ answerOneEl.innerHTML = todos;
 }
 
 function updateAnswerTwo() {
-
+ answerTwoEl.innerText = todos[2];
 }
 
 function removeLastValue() {
-
+let popValue = todos.pop()
 }
 
 function removeFirstValue() {
-
+ let shiftValue = todos.shift()
 }
 
 function addShiftAndPopValues() {
-
+ todos.push(popValue)
+ todos.push(shiftValue)
 }
 
 function updateAnswerFour() {
