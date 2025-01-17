@@ -23,38 +23,42 @@ const answerSixEl = document.getElementById("answer-six");
 const submissionBtn = document.getElementById("submission-btn");
 
 function updateAnswerOne() {
- answerOneEl.innerHTML = todos;
+ answerOneEl.textContent = todos;
 }
+updateAnswerOne()
 
 function updateAnswerTwo() {
- answerTwoEl.innerText = todos[2];
+ answerTwoEl.innerHTML = todos[2];
 }
+updateAnswerTwo()
 
 function removeLastValue() {
-let popValue = todos.pop()
+ popValue = todos.pop();
 }
 
+
 function removeFirstValue() {
- let shiftValue = todos.shift()
+  shiftValue = todos.shift();
 }
 
 function addShiftAndPopValues() {
- todos.push(popValue)
- todos.push(shiftValue)
+ todos.push(popValue);
+ todos.push(shiftValue);
 }
 
 function updateAnswerFour() {
-
+ answerFourEl.innerHTML = todos;
 }
+updateAnswerFour()
 
 function reverseTodoList() {
-
+ let rev = todos.reverse
 }
 
 function updateAnswerFive() {
-
+    answerFiveEl.innerHTML = todos
 }
-
+updateAnswerFive()
 function updateAnswerSix() {
 
 }
