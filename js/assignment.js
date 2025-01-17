@@ -47,7 +47,7 @@ function addShiftAndPopValues() {
 }
 
 function updateAnswerFour() {
- answerFourEl.innerHTML = todos;
+ answerFourEl.innerHTML = todos.pop();
 }
 
 
@@ -55,7 +55,6 @@ function reverseTodoList() {
  
 }
 
-let rev = todos.reverse()
 function updateAnswerFive() {
     answerFiveEl.innerHTML = rev
 }
