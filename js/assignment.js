@@ -61,7 +61,6 @@ function updateAnswerFive() {
 }
 
 function updateAnswerSix() {
-    todos = todos + todos.push(popValue) + todos.push(shiftValue);
  answerSixEl.innerText = todos;
 }
 
