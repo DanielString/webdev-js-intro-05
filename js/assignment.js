@@ -25,12 +25,12 @@ const submissionBtn = document.getElementById("submission-btn");
 function updateAnswerOne() {
  answerOneEl.textContent = todos;
 }
-updateAnswerOne()
+
 
 function updateAnswerTwo() {
  answerTwoEl.innerHTML = todos[2];
 }
-updateAnswerTwo()
+
 
 function removeLastValue() {
  popValue = todos.pop();
@@ -49,7 +49,7 @@ function addShiftAndPopValues() {
 function updateAnswerFour() {
  answerFourEl.innerHTML = todos;
 }
-updateAnswerFour()
+
 
 function reverseTodoList() {
  
@@ -59,14 +59,17 @@ let rev = todos.reverse()
 function updateAnswerFive() {
     answerFiveEl.innerHTML = rev
 }
-updateAnswerFive()
+
 
 function updateAnswerSix() {
  answerSixEl.innerText = todos;
 }
 
 function render() {
-
+    updateAnswerOne()
+    updateAnswerTwo()
+    updateAnswerFour()
+    updateAnswerFive()
 }
 
 submissionBtn.addEventListener("click", function () {
