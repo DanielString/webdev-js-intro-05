@@ -62,7 +62,7 @@ function updateAnswerFive() {
 updateAnswerFive()
 
 function updateAnswerSix() {
- answerSixEl.innerText =
+ answerSixEl.innerText = todos;
 }
 
 function render() {
