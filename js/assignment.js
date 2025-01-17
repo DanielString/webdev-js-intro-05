@@ -37,9 +37,6 @@ function removeLastValue() {
 }
 
 
-function removeFirstValue() {
-  shiftValue = todos.shift();
-}
 
 function addShiftAndPopValues() {
  todos.push(popValue);
@@ -47,20 +44,25 @@ function addShiftAndPopValues() {
 }
 
 function updateAnswerFour() {
- answerFourEl.innerHTML = todos.pop();
+    todos - todos.pop()
+ answerFourEl.innerHTML = todos;
 }
 
 
 function reverseTodoList() {
- 
+ todos = todos.reverse()
 }
 
 function updateAnswerFive() {
-    answerFiveEl.innerHTML = rev
+    answerFiveEl.innerHTML = todos.reverse()
 }
 
+function removeFirstValue() {
+    shiftValue = todos.shift();
+  }
 
 function updateAnswerSix() {
+    
  answerSixEl.innerText = todos;
 }
 
@@ -69,6 +71,7 @@ function render() {
     updateAnswerTwo()
     updateAnswerFour()
     updateAnswerFive()
+    updateAnswerSix()
 }
 
 submissionBtn.addEventListener("click", function () {
