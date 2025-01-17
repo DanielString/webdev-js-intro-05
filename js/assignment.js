@@ -52,15 +52,17 @@ function updateAnswerFour() {
 updateAnswerFour()
 
 function reverseTodoList() {
- let rev = todos.reverse
+ 
 }
 
+let rev = todos.reverse()
 function updateAnswerFive() {
-    answerFiveEl.innerHTML = todos
+    answerFiveEl.innerHTML = rev
 }
 updateAnswerFive()
-function updateAnswerSix() {
 
+function updateAnswerSix() {
+ answerSixEl.innerText =
 }
 
 function render() {
