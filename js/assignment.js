@@ -35,6 +35,9 @@ function updateAnswerTwo() {
 function removeLastValue() {
  popValue = todos.pop();
 }
+function removeFirstValue() {
+ shiftValue = todos.shift();
+  }
 
 
 
@@ -57,12 +60,8 @@ function updateAnswerFive() {
     answerFiveEl.innerHTML = todos.reverse()
 }
 
-function removeFirstValue() {
-    shiftValue = todos.shift();
-  }
-
 function updateAnswerSix() {
-    
+    todos = todos + todos.push(popValue) + todos.push(shiftValue);
  answerSixEl.innerText = todos;
 }
 
