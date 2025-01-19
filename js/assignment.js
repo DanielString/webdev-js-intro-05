@@ -53,7 +53,7 @@ function updateAnswerFour() {
 
 
 function reverseTodoList() {
- todos = todos.reverse()
+ todos.reverse()
 }
 
 function updateAnswerFive() {
